@@ -41,6 +41,8 @@ extension Parameterizable {
             q[p] = s
           case let i as Int:
             q[p] = "\(i)"
+          case let i as Bool:
+            q[p] = "\(i)"
           case Optional<Any>.none:
             continue
           default:
