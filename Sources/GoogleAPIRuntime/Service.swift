@@ -27,6 +27,8 @@ public protocol Parameterizable {
   func path(pattern: String) throws -> String
 }
 
+private func print(_ string: String) { }
+
 extension Parameterizable {
   public func query() -> [String:String] {
     var q : [String:String] = [:]
